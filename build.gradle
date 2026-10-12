@@ -1,0 +1,44 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            name = "forge"
+            url = "https://files.minecraftforge.net/maven"
+        }
+    }
+    dependencies {
+        classpath "net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT"
+    }
+}
+
+apply plugin: "forge"
+
+version = "1.0"
+
+group = "com.example"
+archivesBaseName = "CombatEnhancerMod"
+
+minecraft {
+    version = "1.8.9-11.15.1.2318-1.8.9"
+    runDir = "run"
+
+    mappings channel: "stable", version: "1.8.9"
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        name = "forge"
+        url = "https://files.minecraftforge.net/maven"
+    }
+}
+
+dependencies {
+    compile "net.minecraftforge:forge:1.8.9-11.15.1.2318-1.8.9"
+}
+
+processResources {
+    inputs.property "version", project.version
+    inputs.property "mcversion", project.minecraft.version
+    inputs.property "mcp", project.minecraft.mappings.channel
+}

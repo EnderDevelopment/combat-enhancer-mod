@@ -1,0 +1,19 @@
+[[mods]]
+modId="combatenhancermod"
+displayName="Combat Enhancer Mod"
+version="${file.jarVersion}"
+description='''A mod that increases player attack knockback and adds a sprint module with a custom GUI for enhanced combat.'''
+
+[[dependencies.combatenhancermod]]
+modId="forge"
+mandatory=true
+versionRange="[1.8.9-11.15.1.2318-1.8.9,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.combatenhancermod]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.8.9]"
+ordering="NONE"
+side="BOTH"

@@ -1,0 +1,12 @@
+{
+  "modid": "combatenhancermod",
+  "name": "Combat Enhancer Mod",
+  "description": "A mod that increases player attack knockback and adds a sprint module with a custom GUI for enhanced combat.",
+  "version": "1.0",
+  "mcversion": "1.8.9",
+  "authorList": ["YourName"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
